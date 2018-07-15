@@ -225,7 +225,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['env', 'react']
           }
         }
       }
@@ -234,7 +234,7 @@ module.exports = {
 };
 ```
 
-The above snippet uses `babel-loader` which needs Babel's preset plugins [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) and [babel-preset-react](https://www.npmjs.com/package/babel-preset-react) to transpile ES6 and React.
+The above snippet uses `babel-loader` which needs Babel's preset plugins [babel-preset-env](https://www.npmjs.com/package/babel-preset-env) and [babel-preset-react](https://www.npmjs.com/package/babel-preset-react) to transpile ES6 and React.
 
 ## Demo04: CSS-loader ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
 
@@ -432,7 +432,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['env', 'react']
           }
         }
       },
@@ -752,7 +752,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['env', 'react']
           }
         }
       },
@@ -886,7 +886,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['env', 'react']
           }
         }
       },
@@ -964,7 +964,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['env', 'react']
           }
         }
       },
