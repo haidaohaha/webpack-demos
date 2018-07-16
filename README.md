@@ -1075,3 +1075,31 @@ $ npm run dev
 ## License
 
 MIT
+
+## 上面是软老师写的没敢动
+
+查看案例 8 出现问题，基本意思就是你的依赖旧了，需要更新
+使用npm-check 更新（在PowerShell中打开稳妥）
+```
+npm i -g npm-check
+npm-check -u
+```
+会出现有好的交互界面，空格选择要更新的依赖，点击回车；  
+拓展： 更新全局的依赖
+```
+npm-check -u -g
+```
+执行提示修复 
+> npm audit 是 npm 6 新增的一个命令，可以允许开发人员分析复杂的代码并查明特定的漏洞。在刚刚发布的 npm 6.1.0 版本中，开发团队对该命令进行了完善。现在可使用 npm audit fix 子命令自动修复检测到的漏洞，而不必再自己进行跟踪和修复。
+```
+npm audit fix
+```
+再次运行 npm run dev 还是报错，需要安装 webpack-cli
+```
+npm i --save-dev webpack-cli
+```
+这个webpack 4 中出现的，要配置
+此时再次运行
+npm run dev 和 npm run bulid 都是可以的
+
+
